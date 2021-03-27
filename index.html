@@ -35,24 +35,24 @@ blah, blah, blah, blah
 
 
 <script>
-        var allergy_count = 0;
-        var cold_count = 0;
+        var correct_count = 0;
+        var incorrect_count = 0;
 	
 
-        function allergyAdd(){
-            allergy_count = allergy_count + 1;
+        function correctAdd(){
+            correct_count = correct_count + 1;
 
         }
 
-        function coldAdd(){
-            cold_count = cold_count + 1;
+        function incorrectAdd(){
+            incorrect_count = incorrect_count + 1;
         }
 	
 	function resultscalculator(){
 	var resultText = document.getElementById("resultspage");
-	var allergyPercent = (allergy_count / (allergy_count + cold_count)) * 100;
-	var coldPercent = (cold_count / (cold_count + allergy_count)) * 100;
-	resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "%" + "<br> Probability it is a cold =" + coldPercent + "%"; //results output
+	var correctPercent = (correct_count / (incorrect_count + correct_count)) * 100;
+	var incorrectPercent = (incorrect_count / (incorrect_count + correct_count)) * 100;
+	resultText.innerHTML = "Percent Correct =" + correctPercent + "%" + "<br> Percent Incorrect =" + incorrectPercent + "%"; //results output
 	}
 
   </script>
@@ -82,7 +82,7 @@ blah, blah, blah, blah
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
-	<h1>Emoji Quiz?</h1>
+	<h1>Emoji Quiz</h1>
 </div>
 	
 <div id="content" class="w3-container">
@@ -102,8 +102,8 @@ blah, blah, blah, blah
 	
     	<div id="content" class="w3-container">
         <p>🚶‍♂☠</p> 
-	<a href="#two" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> The Walking Dead </a>
-	<a href="#two" onclick="coldAdd();" class="w3-btn w3-grey w3-round"> The Last Man Standing </a>
+	<a href="#two" onclick="correctAdd();" class="w3-btn w3-grey w3-round"> The Walking Dead </a>
+	<a href="#two" onclick="incorrectAdd();" class="w3-btn w3-grey w3-round"> The Last Man On Earth </a>
 
     	</div>
 </div>
@@ -115,8 +115,8 @@ blah, blah, blah, blah
 	
 	<div id="content" class="w3-container">
 	<p>🏢</p>
-        <a href="#three" onclick="coldAdd();" class="w3-btn w3-grey w3-round"> Grey's Anatomy </a>
-	<a href="#three" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> The Office </a>
+        <a href="#three" onclick="incorrectAdd();" class="w3-btn w3-grey w3-round"> Grey's Anatomy </a>
+	<a href="#three" onclick="correctAdd();" class="w3-btn w3-grey w3-round"> The Office </a>
 
 	</div>
 </div>	
@@ -128,8 +128,8 @@ blah, blah, blah, blah
 	
 	<div id="content" class="w3-container">
 	<p>🙊🐶🐱🐹🐰</p>
-	<a href="#four" onclick="coldAdd();" class="w3-btn w3-grey w3-round"> Ice Age </a>
-	<a href="#four" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> Secret Life Of Pets </a>
+	<a href="#four" onclick="incorrectAdd();" class="w3-btn w3-grey w3-round"> Ice Age </a>
+	<a href="#four" onclick="correctAdd();" class="w3-btn w3-grey w3-round"> Secret Life Of Pets </a>
 
 	</div>
 </div>	
@@ -141,8 +141,8 @@ blah, blah, blah, blah
 	
 	<div id="content" class="w3-container">
 	<p>🍟🍕🍔🎲🎲</p>
-	<a href="#five" onclick="coldAdd();" class="w3-btn w3-grey w3-round"> Hunger Games </a>
-	<a href="#five" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> Scooby Doo and the Gourmet Ghost </a>
+	<a href="#five" onclick="correctAdd();" class="w3-btn w3-grey w3-round"> Hunger Games </a>
+	<a href="#five" onclick="incorrectAdd();" class="w3-btn w3-grey w3-round"> Scooby Doo and the Gourmet Ghost </a>
 
 	</div>
 </div>	
@@ -154,8 +154,8 @@ blah, blah, blah, blah
 	
 	<div id="content" class="w3-container">
 	<p>😺🐠</p>
-	<a href="#six" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> Catfish </a>
-	<a href="#six" onclick="coldAdd();" class="w3-btn w3-grey w3-round"> Garfield </a>
+	<a href="#six" onclick="correctAdd();" class="w3-btn w3-grey w3-round"> Catfish </a>
+	<a href="#six" onclick="incorrectAdd();" class="w3-btn w3-grey w3-round"> Garfield </a>
 
 	</div>
 </div>	
@@ -167,8 +167,8 @@ blah, blah, blah, blah
 	
 	<div id="content" class="w3-container">
 		<p>👑📖</p>
-		<a href="#resultspage" onclick="allergyAdd();" class="w3-btn w3-grey w3-round"> Diary of a Wimpy Kid </a>
-		<a href="#resultspage" onclick="coldAdd();" class="w3-btn w3-grey w3-round"> Princess Diaries </a>
+		<a href="#resultspage" onclick="incorrectAdd();" class="w3-btn w3-grey w3-round"> Diary of a Wimpy Kid </a>
+		<a href="#resultspage" onclick="correctAdd();" class="w3-btn w3-grey w3-round"> Princess Diaries </a>
 
 	</div>
 </div>	
