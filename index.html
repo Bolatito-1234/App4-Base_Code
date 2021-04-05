@@ -33,8 +33,8 @@ Nothing right now
    </head> 
 
 
-*Brief Description of Goal of the Below Code:
-Calculate the amount the partcipant got right vs wrong*
+<!--Brief Description of Goal of the Below Code:
+calculate the amount the partcipant got right vs wrong -->
 	
 <script>
         var correct_count = 0;
@@ -52,7 +52,7 @@ Calculate the amount the partcipant got right vs wrong*
 	
 	function resultscalculator(){
 	var resultText = document.getElementById("resultspage");
-	var correctPercent = (correct_count / (incorrect_count + correct_count)) * 100;
+	var correctPercent = (correct_count / (incorrect_count + correct_count)) * 100; 
 	var incorrectPercent = (incorrect_count / (incorrect_count + correct_count)) * 100;
 	resultText.innerHTML = "Percent Correct =" + correctPercent + "%" + "<br> Percent Incorrect =" + incorrectPercent + "%"; //results output
 	}
@@ -89,7 +89,7 @@ Calculate the amount the partcipant got right vs wrong*
 </style>
 	
 	
-   The below code is the introduction
+   <!-- the codes below are the introduction -->
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
@@ -104,22 +104,24 @@ Calculate the amount the partcipant got right vs wrong*
 	
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
-	<p>GET A 100% FOR BRAGGING RIGHTS.</p>
+	<p>GET A 100% FOR BRAGGING RIGHTS.</p> <!-- end introduction -->
 
-	*Start of questions*
+	<!--start of questions -->
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 1</h1> *question name*
+		<h1>Question 1</h1><!-- this will be the same format for all 6 questions: --> <!-- question name -->
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p>🚶‍♂☠</p> *question*
-	<a href="#two" onclick="correctAdd();" class="w3-btn w3-grey w3-round"> The Walking Dead </a> *answer choice* 
+        <p>🚶‍♂☠</p> <!-- question -->
+	<a href="#two" onclick="correctAdd();" class="w3-btn w3-grey w3-round"> The Walking Dead </a> <!-- answer choices -->
 	<a href="#two" onclick="incorrectAdd();" class="w3-btn w3-grey w3-round"> The Last Man On Earth </a>
 
     	</div>
 </div>
 
+	<!-- end of question -->
+	
 <div class="page" id="two">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1> 
@@ -185,7 +187,7 @@ Calculate the amount the partcipant got right vs wrong*
 	</div>
 </div>	
 					      
-<div class="page" id="resultspage"> *results*
+<div class="page" id="resultspage"> <!-- results -->
 	<div class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
 	</div>
@@ -195,7 +197,7 @@ Calculate the amount the partcipant got right vs wrong*
 		<p>Let's see how well you did!</p>
 		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5B5bce4kBpGnrJNFg0Rjlc4VL70cH78zpB8KkZTCcIMgN4a74oGPZ1Wlaq5egK7abt6U&usqp=CAU" alt="Emoji with Magnifying Glass">
 		<a onclick="resultscalculator();" class="w3-btn w3-grey w3-round"> Results </a>
-*end code*
+<!-- end enter quiz code -->
 	</div>
 </div>	
 	
