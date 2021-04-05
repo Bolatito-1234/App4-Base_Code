@@ -6,8 +6,7 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
  
 Authors in chronological order of contribution:
-Author 1
-Author 2
+Bolatito Ajibola
  
 Further Information:
 http://diystream.cns.utexas.edu/
@@ -17,10 +16,10 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+Allow people the ability to test their emoji proficiency
  
 Known Issues:
-blah, blah, blah, blah
+Nothing right now
 -->
 
    <head> 
@@ -34,6 +33,9 @@ blah, blah, blah, blah
    </head> 
 
 
+*Brief Description of Goal of the Below Code:
+Calculate the amount the partcipant got right vs wrong*
+	
 <script>
         var correct_count = 0;
         var incorrect_count = 0;
@@ -87,7 +89,7 @@ blah, blah, blah, blah
 </style>
 	
 	
-   
+   The below code is the introduction
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
@@ -104,14 +106,15 @@ blah, blah, blah, blah
  	
 	<p>GET A 100% FOR BRAGGING RIGHTS.</p>
 
+	*Start of questions*
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 1</h1>
+		<h1>Question 1</h1> *question name*
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p>🚶‍♂☠</p> 
-	<a href="#two" onclick="correctAdd();" class="w3-btn w3-grey w3-round"> The Walking Dead </a>
+        <p>🚶‍♂☠</p> *question*
+	<a href="#two" onclick="correctAdd();" class="w3-btn w3-grey w3-round"> The Walking Dead </a> *answer choice* 
 	<a href="#two" onclick="incorrectAdd();" class="w3-btn w3-grey w3-round"> The Last Man On Earth </a>
 
     	</div>
@@ -119,12 +122,12 @@ blah, blah, blah, blah
 
 <div class="page" id="two">
 	<div class="w3-container w3-flat-carrot">
-		<h1>Question 2</h1>
+		<h1>Question 2</h1> 
 	</div>
 	
 	<div id="content" class="w3-container">
-	<p>🏢</p>
-        <a href="#three" onclick="incorrectAdd();" class="w3-btn w3-grey w3-round"> Grey's Anatomy </a>
+	<p>🏢</p> 
+        <a href="#three" onclick="incorrectAdd();" class="w3-btn w3-grey w3-round"> Grey's Anatomy </a> *answer choices*
 	<a href="#three" onclick="correctAdd();" class="w3-btn w3-grey w3-round"> The Office </a>
 
 	</div>
@@ -182,7 +185,7 @@ blah, blah, blah, blah
 	</div>
 </div>	
 					      
-<div class="page" id="resultspage">
+<div class="page" id="resultspage"> *results*
 	<div class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
 	</div>
@@ -192,7 +195,7 @@ blah, blah, blah, blah
 		<p>Let's see how well you did!</p>
 		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5B5bce4kBpGnrJNFg0Rjlc4VL70cH78zpB8KkZTCcIMgN4a74oGPZ1Wlaq5egK7abt6U&usqp=CAU" alt="Emoji with Magnifying Glass">
 		<a onclick="resultscalculator();" class="w3-btn w3-grey w3-round"> Results </a>
-
+*end code*
 	</div>
 </div>	
 	
